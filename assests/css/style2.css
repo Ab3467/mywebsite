@@ -1,0 +1,398 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    .nav1 {
+        width: 100%;
+        height: 50px;
+        color: white;
+        background: #222f3e;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav1 i {
+        margin: 0 5 px;
+        letter-spacing: 5px;
+    }
+    
+    .nav1 a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        background: #e67e22;
+        border: #e67e22;
+        border-radius: 3px;
+        letter-spacing: 2px;
+    }
+    
+    .nav2 {
+        width: 100%;
+        height: 80px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 70px;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+    }
+    
+    .menu a:hover {
+        color: #e67e22;
+    }
+    
+    header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, #e6852f), url(/images/toa-heftiba-FV3GConVSss-unsplash.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .nav2 img {
+        max-width: 200px;
+        max-height: 109px;
+        border: 2px solid #ffffff;
+        border-radius: 200%;
+        margin-top: 6px;
+    }
+    /* ... Your existing CSS code ... */
+    /* New CSS for arrow up and down animations */
+    
+    .achievements-title {
+        cursor: pointer;
+        padding-left: 70px;
+        padding-top: 60px;
+        color: #f9f9f9;
+        font-size: 45px;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+    }
+    
+    .achievements-title:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #e6852f;
+    }
+    
+    .achievements-title::after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(6%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .achievements-title1:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #e6852f;
+    }
+    
+    .achievements-title2:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #e6852f;
+    }
+    
+    .achievements-container {
+        display: none;
+        transition: transform 3s ease-in-out;
+        padding: 10px;
+        border: 3px solid #ffffff;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 70px;
+        background-color: #383955;
+        width: 25%;
+        height: 55%;
+    }
+    
+    .achievements-container p {
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 2px;
+        color: #987352;
+        padding-left: 15px;
+    }
+    
+    .achievements-container.show {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .achievements-title1 {
+        cursor: pointer;
+        padding-left: 70px;
+        padding-top: 70px;
+        color: #f9f9f9;
+        font-size: 45px;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+    }
+    
+    .achievements-title1::after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(6%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .achievements-container1 {
+        float: left;
+        display: none;
+        padding: 10px;
+        border: 3px solid #ffffff;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 70px;
+        background-color: #383955;
+        width: 25%;
+        height: 55%;
+    }
+    
+    .achievements-container1 img {
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 2px;
+        color: #89715c;
+        padding-left: 15px;
+    }
+    
+    .achievements-container1.show {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .achievements-title2 {
+        cursor: pointer;
+        padding-left: 70px;
+        padding-top: 70px;
+        color: #f9f9f9;
+        font-size: 45px;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+    }
+    
+    .achievements-title2::after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(6%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .achievements-container2 {
+        display: none;
+        transition: transform 3s ease-in-out;
+        padding: 10px;
+        border: 3px solid #ffffff;
+        border-radius: 20px;
+        background-color: #383955;
+        width: 25%;
+        height: 55%;
+        position: absolute;
+        top: 30%;
+        right: 40%;
+        /* Adjust this value to position it horizontally */
+        /* Alternatively, you can use left: value; instead of right: value; */
+        overflow: hidden;
+    }
+    
+    .achievements-container2 p {
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 2px;
+        color: #89715c;
+        padding-left: 15px;
+    }
+    
+    .achievements-container2.show {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .achievements-container {
+        display: none;
+        transition: transform 3s ease-in-out;
+        padding: 10px;
+        border: 3px solid #ffffff;
+        border-radius: 20px;
+        background-color: #383955;
+        width: 25%;
+        height: 55%;
+        position: absolute;
+        top: 33%;
+        right: 40%;
+        /* Adjust this value to position it horizontally */
+        /* Alternatively, you can use left: value; instead of right: value; */
+        overflow: hidden;
+    }
+    
+    .achievements-container::before {
+        content: "";
+        position: absolute;
+        width: calc(100% + 6px);
+        /* Adjust to include the border width */
+        height: calc(100% + 6px);
+        /* Adjust to include the border width */
+        top: -3px;
+        /* Adjust to align with the border */
+        left: -3px;
+        /* Adjust to align with the border */
+        border: 3px solid transparent;
+        border-radius: 20px;
+        border-image: linear-gradient(0deg, orange, rgb(43, 38, 38), rgb(43, 38, 38));
+        border-image-slice: 1;
+        animation: borderAnimation 4s infinite linear;
+    }
+    
+    .achievements-container::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        border-radius: 20px;
+        border-image: linear-gradient(-45deg, orange, rgb(43, 38, 38));
+        border-image-slice: 2;
+        animation: borderAnimation 4s infinite linear reverse;
+    }
+    
+    @keyframes borderAnimation {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /* .image {
+        max-width: 50%;
+        max-height: 50%;
+        position: absolute;
+        top: 34%;
+        right: 3%;
+        bottom: 0;
+        float: right;
+        border: 2px solid white;
+        border-radius: 30px;
+        box-sizing: border-box;
+        background-size: cover;
+    } */
+    /* ... Your existing CSS code ... */
+    
+    .image-container {
+        width: 35%;
+        /* Adjust the width of the image container */
+        height: 50%;
+        /* Adjust the height of the image container */
+        position: absolute;
+        top: 36%;
+        right: 3%;
+        bottom: 0;
+        float: right;
+        border: 10px solid rgb(250, 249, 248);
+        border-radius: 30px;
+        box-sizing: border-box;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: fade-in 3s ease-in-out forwards;
+        /* Remove float and borders from the image element */
+    }
+    
+    .image-container::before,
+    .image-container::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        border-radius: 20px;
+    }
+    
+    .image-container::before {
+        border-image: linear-gradient(45deg, orange, rgb(43, 38, 38), rgb(43, 38, 38));
+        border-image-slice: 1;
+        animation: borderAnimation 5s infinite linear;
+    }
+    
+    .image-container::after {
+        border-image: linear-gradient(-45deg, rgb(175, 143, 83), rgb(43, 38, 38));
+        border-image-slice: 2;
+        animation: borderAnimation 6s infinite linear reverse;
+    }
+    
+    @keyframes borderAnimation {
+        0% {
+            transform: rotate(45deg);
+        }
+        0% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Apply the fade-in animation to elements with the 'fade-in' class */
+    
+    .fade-in {
+        animation: fadeIn 2s ease-in-out;
+        /* Set initial opacity to 0 */
+        opacity: 0;
+    }

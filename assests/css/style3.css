@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.nav1 {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: #222f3e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav1 i {
+    margin: 0 5 px;
+    letter-spacing: 5px;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: #e67e22;
+    border: #e67e22;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.nav2 {
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+
+.menu a:hover {
+    color: #e67e22;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 80%, #934705), url(/images/4391662.jpg);
+    background-size: 100% 100%;
+}
+
+.nav2 img {
+    max-width: 200px;
+    max-height: 109px;
+    border: 2px solid #ffffff;
+    /* Add a solid border with the color #e6852f */
+    border-radius: 200%;
+    margin-top: 6px;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+    padding-top: 3%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border: 5px solid rgb(185, 78, 15);
+    border-radius: 25px;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.title h1 {
+    color: rgb(214, 101, 49);
+    padding-top: 0%;
+    text-decoration: underline;
+}
+
+.title h1:hover {
+    color: #efedec;
+    cursor: pointer;
+    text-shadow: #222f3e;
+}
+
+.content-section .content h3 {
+    margin-top: 20px;
+    color: #f9f5f5;
+    font-size: 21px;
+}
+
+.content-section .content p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f8f5f3;
+}
+
+.content .button {
+    margin: 20px;
+    margin-left: 0%;
+}
+
+.content .button a {
+    background-color: #e67e22;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border: 4px solid white;
+    border-color: #fff;
+    border-radius: 20px;
+    /* Set fixed width and height */
+    width: 120px;
+    height: 80px;
+    /* Center the button text vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .button a:hover {
+    background-color: #f8f5f3;
+    color: #060606;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section {
+        float: none;
+        width: 55%;
+        margin: auto;
+        display: block;
+    }
+    .image-section {
+        float: none;
+        width: 100%;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button {
+        text-align: center;
+    }
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+}
+
+
+/* ... Your existing CSS code ... */
+
+.image-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section img {
+    max-width: 100%;
+    display: block;
+}
+
+.image-section::before,
+.image-section::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 6px);
+    /* Adjust to include the border width */
+    height: calc(100% + 6px);
+    /* Adjust to include the border width */
+    top: -3px;
+    /* Adjust to align with the border */
+    left: -3px;
+    /* Adjust to align with the border */
+    border: 3px solid transparent;
+    border-radius: 30px;
+}
+
+.image-section::before {
+    border-image: linear-gradient(0deg, orange, rgb(43, 38, 38), rgb(43, 38, 38));
+    border-image-slice: 1;
+    animation: borderAnimation 4s infinite linear;
+}
+
+.image-section::after {
+    border-image: linear-gradient(-45deg, orange, rgb(43, 38, 38));
+    border-image-slice: 2;
+    animation: borderAnimation 4s infinite linear reverse;
+}
+
+@keyframes borderAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* CSS for the fade-in animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Apply fade-in animation to the container and image-section */
+
+.container,
+.image-section {
+    animation: fadeIn 2s ease-in-out;
+    /* Set initial opacity to 0 */
+    opacity: 0;
+}
