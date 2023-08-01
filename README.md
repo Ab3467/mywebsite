@@ -2,7 +2,7 @@
 
 Welcome to One Power, a software company dedicated to delivering powerful software solutions to our clients. With a team of talented and experienced developers, we aim to empower businesses through innovative technology and exceptional service.
 
-![One Power Logo](/path/to/your/logo.png)
+campaign-creators-gMsnXqILjp4-unsplash.jpg
 
 ## Table of Contents
 
