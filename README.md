@@ -71,3 +71,7 @@ If you have any inquiries or would like to discuss a potential project, feel fre
 - Website: www.onepower.com
 
 Thank you for visiting One Power - Empowering Businesses through Technology!
+
+
+![Screenshot (51)](https://github.com/Ab3467/mywebsite/assets/138695838/621108d2-f3c8-4eec-8fc8-9dcde39b745b)
+
